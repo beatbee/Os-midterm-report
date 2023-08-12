@@ -1,0 +1,9 @@
+global1: 0x10271b000
+global2: 0x10271b004
+global3: 0x10271b008
+Stack l=0: 0x7ff7bd7ec0dc
+Stack l=1: 0x7ff7bd7ec0bc
+Stack l=2: 0x7ff7bd7ec09c
+Heap l=0: 0x7fe99e004080
+Heap l=1: 0x7fe99e004090
+Heap l=2: 0x7fe99e0040a0
