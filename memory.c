@@ -27,14 +27,27 @@ void heap(int c){
     }
     
 }
+
+void overflow(long long of){
+    long long over[1000];
+    printf("Overflowl=%lld: %p\n",of, over);
+    overflow(of+1);
+}
 int global1 = 1;
 int global2 = 2;
-int global3;
+int global3 = 3;
 int main(){
+    int ch;
+    scanf("%d", &ch);
+    if(ch == 1){
+        overflow(0);
+    }
+    else{ 
     printf("global1: %p\n", &global1);
     printf("global2: %p\n", &global2);
     printf("global3: %p\n", &global3);
     stack(0);
     heap(3);
+    }
     return 0;
 }
