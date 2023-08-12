@@ -9,6 +9,9 @@
 */
 #include<stdio.h>
 #include<stdlib.h>
+int global1 = 1;
+int global2 = 2;
+int global3 = 3;
 void stack(int b){
     if(b < 3){
         printf("Stack l=%d: %p\n", b, &b);
@@ -33,9 +36,6 @@ void overflow(long long of){
     printf("Overflowl=%lld: %p\n",of, over);
     overflow(of+1);
 }
-int global1 = 1;
-int global2 = 2;
-int global3 = 3;
 int main(){
     int ch;
     scanf("%d", &ch);
